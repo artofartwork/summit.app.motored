@@ -16,13 +16,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="596eed0a-0095-4560-8c8d-02ee49041bcb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCausaRepository.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCausaRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,76 +72,7 @@
     <favorites_list name="APP MOVIL MOTORRED" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DetailTwoActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-              <folding>
-                <element signature="method#setupRecyclerView#0;class#DetailTwoActivity#0" expanded="false" />
-                <element signature="method#initComponentsTabs#0;class#DetailTwoActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_detail_two.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="241" column="45" lean-forward="false" selection-start-line="241" selection-start-column="45" selection-end-line="241" selection-end-column="45" />
-              <folding>
-                <element signature="e#593#1215#0" expanded="false" />
-                <element signature="e#1226#3445#0" expanded="false" />
-                <element signature="e#7119#7344#0" expanded="false" />
-                <element signature="e#7350#7868#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_detalle_causa_analisis_falla.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_causa_analisis_falla.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-              <folding>
-                <marker date="1517245272306" expanded="true" signature="14863:14864" ph="..." />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnalisisCausaFallaAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Adapters/AnalisisCausaFallaAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding>
-                <element signature="e#2405#2406#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InformeTecnicoFallaRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="97" column="118" lean-forward="false" selection-start-line="97" selection-start-column="118" selection-end-line="97" selection-end-column="118" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,21 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>adjun</find>
-      <find>querybu</find>
-      <find>adapterComentarios</find>
-      <find>listaanalisiscausa</find>
-      <find>IdInformeTecnico</find>
-      <find>mapper</find>
-      <find>edtTecnicos</find>
-      <find>lsvTecnicos</find>
-      <find>fileAceite</find>
-      <find>ArchivoAceiteRuta</find>
-      <find>fileScanner</find>
-      <find>fileVin</find>
-      <find>filename</find>
-      <find>edtGeneradoClikeado</find>
-      <find>mapperInformeTecnicoFalla</find>
       <find>mapperAdjuntoDetalleLis</find>
       <find>time</find>
       <find>timestamp</find>
@@ -175,8 +99,23 @@
       <find>initRepository</find>
       <find>informeTecnicoRecomendacionesRepository</find>
       <find>informeTecnicoFallaxEmpleadoRepository</find>
-      <find>listDiagnostico</find>
       <find>repository</find>
+      <find>selec</find>
+      <find>mapperInformeTecnico</find>
+      <find>AnalisisCausaFallaAdapter</find>
+      <find>swipeController</find>
+      <find>visi</find>
+      <find>initComponentsTabs</find>
+      <find>tabs</find>
+      <find>mAdapter</find>
+      <find>informeTecnicoFallaDiagnosticoRepository</find>
+      <find>spnSucursal</find>
+      <find>ObtenerDatosDetalleCausa</find>
+      <find>players</find>
+      <find>CerrarDetalle</find>
+      <find>entidadDao</find>
+      <find>lista1</find>
+      <find>listDiagnostico</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1898,10 +1837,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/GuardarEnviarActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_lista.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/MaestraRepository/EmpresaRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/MaestraRepository/ClienteRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/MaestraRepository/MaestraRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/MaestraRepository/MaestraArguRepository.java" />
@@ -1944,11 +1879,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/NuevoInformeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/LogicMethods/Repository.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoFalla.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_causa_analisis_falla.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCausaRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml" />
       </list>
     </option>
   </component>
@@ -2129,120 +2068,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.summit.motored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.summit.motored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="motorresapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.summit.motored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.summit.motored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="motorresapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.summit.motored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.summit.motored" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="motorresapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -2250,7 +2075,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/" />
     <property name="device.picker.selection" value="192.168.218.101:5555" />
     <property name="android.profiler.active" value="true" />
     <property name="android.project.structure.last.selected" value="app" />
@@ -2363,7 +2188,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517245352628" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517260372613" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2411,7 +2236,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517245352628" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517260372614" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2443,6 +2268,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2573,7 +2419,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517245352629" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517260372615" />
       </method>
     </configuration>
     <list size="1">
@@ -2635,31 +2481,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="1" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55973154" sideWeight="0.6677378" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39194632" sideWeight="0.48714653" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1852349" sideWeight="0.47686374" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15704697" sideWeight="0.2911311" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34496644" sideWeight="0.8791774" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2577121" sideWeight="0.1352381" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15704697" sideWeight="0.7088689" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39194632" sideWeight="0.47943446" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1852349" sideWeight="0.47429305" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17583893" sideWeight="0.12082262" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31940874" sideWeight="0.92019546" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17583893" sideWeight="0.8791774" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2577121" sideWeight="0.8647619" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23221476" sideWeight="0.8489717" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4307036" sideWeight="0.4974293" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3489933" sideWeight="0.8971722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.42802057" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22879177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24228792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110067114" sideWeight="0.49550128" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.49541286" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31940874" sideWeight="0.07980456" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40402684" sideWeight="0.7352185" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SQLite Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32080537" sideWeight="0.67416453" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2671,7 +2518,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110067114" sideWeight="0.49550128" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="SQLite Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32080537" sideWeight="0.67416453" order="14" side_tool="false" content_ui="tabs" />
@@ -3195,102 +3041,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>140</line>
-          <properties />
-          <option name="timeStamp" value="419" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>146</line>
-          <properties />
-          <option name="timeStamp" value="420" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>154</line>
-          <properties />
-          <option name="timeStamp" value="421" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="422" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="423" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>186</line>
-          <properties />
-          <option name="timeStamp" value="424" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="425" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
-          <line>180</line>
-          <properties />
-          <option name="timeStamp" value="426" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="428" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java</url>
-          <line>193</line>
-          <properties />
-          <option name="timeStamp" value="429" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java</url>
-          <line>194</line>
-          <properties />
-          <option name="timeStamp" value="430" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java</url>
-          <line>199</line>
-          <properties />
-          <option name="timeStamp" value="431" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java</url>
-          <line>201</line>
-          <properties />
-          <option name="timeStamp" value="432" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java</url>
-          <line>188</line>
-          <properties />
-          <option name="timeStamp" value="433" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="434" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="435" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java</url>
           <line>213</line>
           <properties />
           <option name="timeStamp" value="436" />
@@ -3324,156 +3074,6 @@
           <line>220</line>
           <properties />
           <option name="timeStamp" value="441" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="442" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="443" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="444" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>539</line>
-          <properties />
-          <option name="timeStamp" value="446" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>538</line>
-          <properties />
-          <option name="timeStamp" value="447" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>537</line>
-          <properties />
-          <option name="timeStamp" value="448" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>533</line>
-          <properties />
-          <option name="timeStamp" value="449" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>535</line>
-          <properties />
-          <option name="timeStamp" value="450" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>534</line>
-          <properties />
-          <option name="timeStamp" value="451" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>468</line>
-          <properties />
-          <option name="timeStamp" value="455" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>470</line>
-          <properties />
-          <option name="timeStamp" value="456" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>473</line>
-          <properties />
-          <option name="timeStamp" value="457" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>485</line>
-          <properties />
-          <option name="timeStamp" value="458" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>482</line>
-          <properties />
-          <option name="timeStamp" value="459" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>479</line>
-          <properties />
-          <option name="timeStamp" value="460" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>477</line>
-          <properties />
-          <option name="timeStamp" value="461" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>475</line>
-          <properties />
-          <option name="timeStamp" value="462" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>471</line>
-          <properties />
-          <option name="timeStamp" value="463" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>540</line>
-          <properties />
-          <option name="timeStamp" value="475" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>654</line>
-          <properties />
-          <option name="timeStamp" value="476" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>651</line>
-          <properties />
-          <option name="timeStamp" value="477" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>649</line>
-          <properties />
-          <option name="timeStamp" value="478" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>647</line>
-          <properties />
-          <option name="timeStamp" value="479" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>531</line>
-          <properties />
-          <option name="timeStamp" value="488" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
-          <line>623</line>
-          <properties />
-          <option name="timeStamp" value="492" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java</url>
@@ -3649,6 +3249,234 @@
           <properties />
           <option name="timeStamp" value="529" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>286</line>
+          <properties />
+          <option name="timeStamp" value="537" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>281</line>
+          <properties />
+          <option name="timeStamp" value="538" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>158</line>
+          <properties />
+          <option name="timeStamp" value="539" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="540" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>289</line>
+          <properties />
+          <option name="timeStamp" value="542" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>291</line>
+          <properties />
+          <option name="timeStamp" value="543" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>290</line>
+          <properties />
+          <option name="timeStamp" value="544" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>133</line>
+          <properties />
+          <option name="timeStamp" value="547" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="549" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="550" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>174</line>
+          <properties />
+          <option name="timeStamp" value="551" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="552" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="553" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="555" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>157</line>
+          <properties />
+          <option name="timeStamp" value="556" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="557" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>277</line>
+          <properties />
+          <option name="timeStamp" value="558" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>278</line>
+          <properties />
+          <option name="timeStamp" value="559" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="560" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="563" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>303</line>
+          <properties />
+          <option name="timeStamp" value="564" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="567" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>293</line>
+          <properties />
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>294</line>
+          <properties />
+          <option name="timeStamp" value="569" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="574" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="575" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="576" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="577" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="578" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="579" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="580" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="581" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="582" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="583" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="584" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>296</line>
+          <properties />
+          <option name="timeStamp" value="585" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java</url>
+          <line>297</line>
+          <properties />
+          <option name="timeStamp" value="586" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/MaestraRepository/EmpresaRepository.java</url>
           <line>61</line>
@@ -3693,7 +3521,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="530" />
+      <option name="time" value="587" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
@@ -3702,120 +3530,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/Maestro/Empresa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnico.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="56" column="39" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="6678" column="0" lean-forward="false" selection-start-line="6678" selection-start-column="0" selection-end-line="6678" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ver_informe_tecnico.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="343" column="50" lean-forward="true" selection-start-line="343" selection-start-column="50" selection-end-line="343" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_detail_informe.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="193" column="84" lean-forward="true" selection-start-line="193" selection-start-column="13" selection-end-line="193" selection-end-column="84" />
-          <folding>
-            <element signature="method#buscarPorParametros#0;class#ListaInformesActivity#0" expanded="false" />
-            <element signature="method#initDataParams#0;class#ListaInformesActivity#0" expanded="false" />
-            <element signature="method#populateModelo#0;class#ListaInformesActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ListaInformesActivity#0" expanded="false" />
-            <element signature="method#sincronizarDatos#0;class#ListaInformesActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_analisis_causa_falla.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/5.0/a83e0dea72fc8aaddd1e54650e220d54a13b6eeb/ormlite-core-5.0-sources.jar!/com/j256/ormlite/stmt/Where.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="190" column="24" lean-forward="false" selection-start-line="190" selection-start-column="24" selection-end-line="190" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Adapters/AdapterItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_conclusiones_recomendaciones.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoRecomendaciones.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoConclusionesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -3837,16 +3555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="226" column="0" lean-forward="false" selection-start-line="226" selection-start-column="0" selection-end-line="246" selection-end-column="5" />
-          <folding>
-            <element signature="method#getNumberOfNotes#0;class#InformeTecnicoRepository#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3983,29 +3691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ConclusionesRecomendacionesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoAdjuntosDetalleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/AdjuntosActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="69" column="41" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
-          <folding>
-            <element signature="method#openFileExplorer#0;class#AdjuntosActivity#0" expanded="false" />
-            <element signature="method#validateForm#0;class#AdjuntosActivity#0" expanded="false" />
-            <element signature="method#mapperInformeTecnicoAdjuntos#0;class#AdjuntosActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4023,47 +3712,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-          <folding>
-            <element signature="method#initElements#0;class#DetailInformeTecnicoActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2954">
-          <caret line="205" column="0" lean-forward="true" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#mostrarListaTecnicos#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#initComponentsTabs#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#validateForm#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#mapperInformeTecnicoFalla#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#populateListDiagnostico#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#populateListCausa#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#populateListCorrectivos#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#onClikListener#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-            <element signature="method#openFileExplorer#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoFallaxEmpleado.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoFalla.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -4074,88 +3726,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/AnalisisCausaFallaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="122" column="47" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="47" />
-          <folding>
-            <element signature="method#setPlayersDataAdapter#0;class#AnalisisCausaFallaActivity#0" expanded="false" />
-            <element signature="method#setupRecyclerView#0;class#AnalisisCausaFallaActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#AnalisisCausaFallaActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="91" column="5" lean-forward="false" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="method#setupRecyclerView#0;class#DetailTwoActivity#0" expanded="false" />
-            <element signature="method#initComponentsTabs#0;class#DetailTwoActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/LogicMethods/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="59" column="74" lean-forward="false" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/NuevoInformeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="176" column="86" lean-forward="false" selection-start-line="176" selection-start-column="64" selection-end-line="176" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="97" column="118" lean-forward="false" selection-start-line="97" selection-start-column="118" selection-end-line="97" selection-end-column="118" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Adapters/AnalisisCausaFallaAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="38" />
           <folding>
-            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#2368#2369#0" expanded="false" />
+            <element signature="e#2405#2406#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="241" column="45" lean-forward="false" selection-start-line="241" selection-start-column="45" selection-end-line="241" selection-end-column="45" />
-          <folding>
-            <element signature="e#593#1215#0" expanded="false" />
-            <element signature="e#1226#3445#0" expanded="false" />
-            <element signature="e#7119#7344#0" expanded="false" />
-            <element signature="e#7350#7868#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_causa_analisis_falla.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+        <state relative-caret-position="107">
+          <caret line="287" column="43" lean-forward="true" selection-start-line="287" selection-start-column="43" selection-end-line="287" selection-end-column="43" />
           <folding>
+            <element signature="e#10145#10293#0" expanded="false" />
             <marker date="1517245272306" expanded="true" signature="14863:14864" ph="..." />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-26/data/res/values/ids.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/widget/CheckBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/LogicMethods/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="115" column="51" lean-forward="false" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoConclusionesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="91" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/NuevoInformeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="117" column="74" lean-forward="true" selection-start-line="117" selection-start-column="71" selection-end-line="117" selection-end-column="78" />
+          <folding>
+            <element signature="method#ValidateForm#0;class#NuevoInformeActivity#0" expanded="false" />
+            <element signature="method#initComponents#0;class#NuevoInformeActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#NuevoInformeActivity#0" expanded="false" />
+            <element signature="method#openDialosAntecedente#0;class#NuevoInformeActivity#0" expanded="false" />
+            <element signature="method#recibiryEnviardesdeFragment#0;class#NuevoInformeActivity#0" expanded="false" />
+            <element signature="method#populateListAntecedentes#0;class#NuevoInformeActivity#0" expanded="false" />
+            <element signature="method#showDatePickerDialog#0;class#NuevoInformeActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_nuevo_informe.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/border.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ConclusionesRecomendacionesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="123" column="72" lean-forward="false" selection-start-line="123" selection-start-column="72" selection-end-line="123" selection-end-column="72" />
+          <folding>
+            <element signature="method#init#0;class#ConclusionesRecomendacionesActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/AnalisisCausaFallaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="114" column="57" lean-forward="false" selection-start-line="114" selection-start-column="57" selection-end-line="114" selection-end-column="57" />
+          <folding>
+            <element signature="method#setupRecyclerView#0;class#AnalisisCausaFallaActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#AnalisisCausaFallaActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailInformeTecnicoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="method#initElements#0;class#DetailInformeTecnicoActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/AdjuntosActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="216" column="13" lean-forward="false" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+          <folding>
+            <element signature="e#2818#3040#0" expanded="true" />
+            <element signature="e#3039#3040#0" expanded="true" />
+            <element signature="method#openFileExplorer#0;class#AdjuntosActivity#0" expanded="false" />
+            <element signature="method#validateForm#0;class#AdjuntosActivity#0" expanded="false" />
+            <element signature="method#mapperInformeTecnicoAdjuntos#0;class#AdjuntosActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetalleCausaAnalisisFallaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="668" column="55" lean-forward="false" selection-start-line="662" selection-start-column="8" selection-end-line="668" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+            <element signature="method#validateForm#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+            <element signature="method#mapperInformeTecnicoFalla#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+            <element signature="method#populateListCausa#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+            <element signature="method#populateListCorrectivos#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+            <element signature="method#onClikListener#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+            <element signature="method#openFileExplorer#0;class#DetalleCausaAnalisisFallaActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/ListaInformesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="method#buscarPorParametros#0;class#ListaInformesActivity#0" expanded="false" />
+            <element signature="method#initDataParams#0;class#ListaInformesActivity#0" expanded="false" />
+            <element signature="method#populateModelo#0;class#ListaInformesActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#ListaInformesActivity#0" expanded="false" />
+            <element signature="method#sincronizarDatos#0;class#ListaInformesActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoFalla.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="842">
+          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+          <folding>
+            <element signature="method#getNumberOfNotes#0;class#InformeTecnicoRepository#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoFallaDiagnostico.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCausaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="103" column="66" lean-forward="false" selection-start-line="103" selection-start-column="66" selection-end-line="103" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Models/Enity/InformeTecnicoFallaCorrectivos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaCorrectivosRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/Storage/db/repository/InformeTecnicoFallaDiagnosticoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="92" column="30" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detail_two.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#6201#7447#0" expanded="false" />
+            <element signature="e#9867#10092#0" expanded="false" />
+            <element signature="e#10098#10616#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/movil/summmit/motorresapp/DetailTwoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+          <folding>
+            <element signature="e#3513#3662#0" expanded="true" />
+            <element signature="e#3661#3662#0" expanded="true" />
+            <element signature="method#initRecomendaciones#0;class#DetailTwoActivity#0" expanded="false" />
+            <element signature="method#initConclusiones#0;class#DetailTwoActivity#0" expanded="false" />
+            <element signature="method#initListaAdjjuntos#0;class#DetailTwoActivity#0" expanded="false" />
+            <element signature="method#initComponentsTabs#0;class#DetailTwoActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#DetailTwoActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#DetailTwoActivity#0" expanded="false" />
+            <element signature="e#11597#11605#0" expanded="true" />
+            <element signature="e#11760#11768#0" expanded="true" />
+            <element signature="e#11922#11930#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

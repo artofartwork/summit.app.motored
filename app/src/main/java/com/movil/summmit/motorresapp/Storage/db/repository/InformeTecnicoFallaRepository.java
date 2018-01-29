@@ -88,13 +88,14 @@ public class InformeTecnicoFallaRepository {
                                     "inf.NroCaso, " +
                                     "inf.Scanner, " +
                                     "inf.Combustible, " +
-                                    "inf.Aceite " +
-                                    "group_concat(emple.Nombre, ) as NombresTecnicos " +
+                                    "inf.Aceite, " +
+                                    "inf.IdInformeTecnicoFalla " +
+                                    //"group_concat(emple.Nombre) as NombresTecnicos " +
                                     "from informetecnicofalla as inf " +
                                     "inner join maestraargu as modo on modo.IdArgu = inf.IdArguModoFalla "+
                                     "inner join maestraargu as sistema on sistema.IdArgu = inf.IdArguSistema " +
-                                    "inner join InformeTecnicoFallaxEmpleado as tecnicos on tecnicos.IdInformeTecnicoFalla = inf.IdInformeTecnicoFalla " +
-                                    "inner join Empleado as emple on emple.IdEmpleado = tecnicos.IdEmpleado " +
+                                    //"inner join InformeTecnicoFallaxEmpleado as tecnicos on tecnicos.IdInformeTecnicoFalla = inf.IdInformeTecnicoFalla " +
+                                    //"inner join Empleado as emple on emple.IdEmpleado = tecnicos.IdEmpleado " +
                                     "where inf.IdInformeTecnico = " + IdInforme + " group by inf.IdInformeTecnicoFalla"
 
                     );
@@ -110,10 +111,68 @@ public class InformeTecnicoFallaRepository {
                 objInforme.setScanner( result[3].equalsIgnoreCase("1") ? true : false);
                 objInforme.setCombustible( result[4].equalsIgnoreCase("1") ? true : false);
                 objInforme.setAceite( result[5].equalsIgnoreCase("1") ? true :  false);
+                objInforme.setIdInformeTecnicoFalla(Integer.parseInt(result[6]));
                 listaInforme.add(objInforme);
             }
 
             return  listaInforme;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+
+
+    public InformeTecnicoFalla findxId(int IdInformeTecnicoFalla) {
+        try {
+
+            InformeTecnicoFalla objInforme = new InformeTecnicoFalla();
+            GenericRawResults<String[]> rawResults =
+                    entidadDao.queryRaw(
+                            "select " +
+                                    "sistema.Nombre as NombreSistema, "+
+                                    "modo.Nombre as NombreModoFalla, "+
+                                    "inf.NroCaso, " +
+                                    "inf.Scanner, " +
+                                    "inf.Combustible, " +
+                                    "inf.Aceite, " +
+                                    "group_concat(emple.Nombre) as NombresTecnicos, " +
+                                    "inf.ArchivoScannerNombre, " +
+                                    "inf.ArchivoAceiteNombre, " +
+                                    "inf.ArchivoCombustibleNombre, " +
+                                    "inf.IdInformeTecnicoFalla " +
+                                    "from informetecnicofalla as inf " +
+                                    "inner join maestraargu as modo on modo.IdArgu = inf.IdArguModoFalla "+
+                                    "inner join maestraargu as sistema on sistema.IdArgu = inf.IdArguSistema " +
+                                    "inner join InformeTecnicoFallaxEmpleado as tecnicos on tecnicos.IdInformeTecnicoFalla = inf.IdInformeTecnicoFalla " +
+                                    "inner join Empleado as emple on emple.IdEmpleado = tecnicos.IdEmpleado " +
+                                    "where inf.IdInformeTecnicoFalla = " + IdInformeTecnicoFalla + " group by inf.IdInformeTecnicoFalla"
+
+                    );
+
+            List<String[]> results = rawResults.getResults();
+
+            for (String[] result : results) {
+
+                objInforme.setNombreSistema(result[0]);
+                objInforme.setNombreModoFalla(result[1]);
+                objInforme.setNroCaso(result[2]);
+                objInforme.setScanner( result[3].equalsIgnoreCase("1") ? true : false);
+                objInforme.setCombustible( result[4].equalsIgnoreCase("1") ? true : false);
+                objInforme.setAceite( result[5].equalsIgnoreCase("1") ? true :  false);
+                objInforme.setNombresTecnicos(result[6]);
+                objInforme.setArchivoScannerNombre(result[7]);
+                objInforme.setArchivoAceiteNombre(result[8]);
+                objInforme.setArchivoCombustibleNombre(result[9]);
+                objInforme.setIdInformeTecnicoFalla(Integer.parseInt(result[10]));
+
+
+            }
+
+            return  objInforme;
 
         } catch (SQLException e) {
             e.printStackTrace();

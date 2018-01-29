@@ -10,9 +10,15 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.movil.summmit.motorresapp.Adapters.AnalisisCausaFallaAdapter;
@@ -21,6 +27,9 @@ import com.movil.summmit.motorresapp.Models.Enity.InformeTecnico;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoAdjuntosDetalle;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoConclusiones;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFalla;
+import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaCausa;
+import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaCorrectivos;
+import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaDiagnostico;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoRecomendaciones;
 import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoAdjuntosDetalleRepository;
 import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoConclusionesRepository;
@@ -34,15 +43,17 @@ import java.util.List;
 
 public class DetailTwoActivity extends AppCompatActivity {
 
-    ListView lsvAdjuntos, lsvConclusiones, lsvRecomendaciones;
+    ListView lsvAdjuntos, lsvConclusiones, lsvRecomendaciones, listDiagnostico, listCausaFalla, listTrabajocorrec;
+    TextView txvTecnicos, txvSistema, txvModo, txvNroCaso;
+    EditText edtFileScanner, edtFileMuestAceite, edtFileMuestCombus;
+    CheckBox chkScanner, chkAceite, chkCombustible;
+    LinearLayout containerDetalle;
     AnalisisCausaFallaAdapter mAdapter;
-   /* InformeTecnicoFallaRepository informeTecnicoFallaRepository;
-    InformeTecnicoAdjuntosDetalleRepository informeTecnicoAdjuntosDetalleRepository;
-    InformeTecnicoConclusionesRepository informeTecnicoConclusionesRepository;
-    InformeTecnicoRecomendacionesRepository informeTecnicoRecomendacionesRepository;*/
-   Repository repository;
+    Repository repository;
     SwipeController swipeController = null;
+    Button btnCerrarDetail;
     int IdInformeTecnico = 0;
+    List<InformeTecnicoFalla> players;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,21 +61,50 @@ public class DetailTwoActivity extends AppCompatActivity {
         Intent myIntent = getIntent(); // gets the previously created intent
         IdInformeTecnico = myIntent.getIntExtra("IdInformeTecnico", 0);
         repository = new Repository(this);
-        /*informeTecnicoFallaRepository = new InformeTecnicoFallaRepository(this);
-        informeTecnicoAdjuntosDetalleRepository = new InformeTecnicoAdjuntosDetalleRepository(this);
-        informeTecnicoConclusionesRepository = new InformeTecnicoConclusionesRepository(this);
-        informeTecnicoRecomendacionesRepository = new InformeTecnicoRecomendacionesRepository(this);*/
-
-        setPlayersDataAdapter();
+        players = repository.informeTecnicoFallaRepository().findAllxInforme(IdInformeTecnico);
+        initComponents();
+      //  setPlayersDataAdapter();
         setupRecyclerView();
         initComponentsTabs();
 
-        lsvAdjuntos =(ListView)findViewById(R.id.lsvAdjuntos);
-        lsvConclusiones =(ListView)findViewById(R.id.lsvConclusiones);
-        lsvRecomendaciones =(ListView)findViewById(R.id.lsvRecomendaciones);
         initListaAdjjuntos();
         initConclusiones();
         initRecomendaciones();
+
+
+
+    }
+    private void initComponents()
+    {
+        btnCerrarDetail = (Button)findViewById(R.id.btnCerrarDetail);
+        btnCerrarDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CerrarDetalle();
+            }
+        });
+        containerDetalle = (LinearLayout)findViewById(R.id.containerDetalle);
+        lsvAdjuntos =(ListView)findViewById(R.id.lsvAdjuntos);
+        lsvConclusiones =(ListView)findViewById(R.id.lsvConclusiones);
+        lsvRecomendaciones =(ListView)findViewById(R.id.lsvRecomendaciones);
+
+        listDiagnostico =(ListView)findViewById(R.id.listDiagnostico);
+        listCausaFalla =(ListView)findViewById(R.id.listCausaFalla);
+        listTrabajocorrec=(ListView)findViewById(R.id.listTrabajocorrec);
+
+        txvTecnicos = (TextView) findViewById(R.id.txvTecnicos);
+        txvSistema = (TextView) findViewById(R.id.txvSistema);
+        txvModo = (TextView) findViewById(R.id.txvModo);
+        txvNroCaso = (TextView)findViewById(R.id.txvNroCaso);
+
+        edtFileScanner = (EditText) findViewById(R.id.edtFileScanner);
+        edtFileMuestAceite = (EditText) findViewById(R.id.edtFileMuestAceite);
+        edtFileMuestCombus = (EditText) findViewById(R.id.edtFileMuestCombus);
+
+        chkScanner = (CheckBox) findViewById(R.id.chkScanner);
+        chkAceite = (CheckBox) findViewById(R.id.chkAceite);
+        chkCombustible = (CheckBox) findViewById(R.id.chkCombustible);
+        // CheckBox chkScanner, chkAceite, chkCombustible;
 
 
     }
@@ -101,14 +141,11 @@ public class DetailTwoActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, adjuntosname);
         lsvAdjuntos.setAdapter(adapter);
     }
-    private void setPlayersDataAdapter() {
-        List<InformeTecnicoFalla> players = new ArrayList<>();
-        players = repository.informeTecnicoFallaRepository().findAllxInforme(IdInformeTecnico);
-
-        mAdapter = new AnalisisCausaFallaAdapter(players);
-    }
 
     private void setupRecyclerView() {
+
+        mAdapter = new AnalisisCausaFallaAdapter(players);
+
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.listaanalisiscausa);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
@@ -118,6 +155,9 @@ public class DetailTwoActivity extends AppCompatActivity {
             @Override
             public void onRightClicked(int position) {
 
+
+                ObtenerDatosDetalleCausa(players.get(position).getIdInformeTecnicoFalla());
+                CerrarDetalle();
                 //aqui poner la funcion para mostrar el fragment con detalles.
             }
 
@@ -160,6 +200,26 @@ public class DetailTwoActivity extends AppCompatActivity {
         tabs.addTab(spec);
 
         tabs.setCurrentTab(0);
+
+        TabHost tabsDetail=(TabHost)findViewById(R.id.tabhostDetail);
+        tabsDetail.setup();
+
+        TabHost.TabSpec specDetail = tabsDetail.newTabSpec("mitab1 det");
+        specDetail.setContent(R.id.tab1Detail);
+        specDetail.setIndicator("Trab. Diagnostico");
+        tabsDetail.addTab(specDetail);
+
+        specDetail=tabsDetail.newTabSpec("mitab2 det");
+        specDetail.setContent(R.id.tab2Detail);
+        specDetail.setIndicator("Causa Falla");
+        tabsDetail.addTab(specDetail);
+
+        specDetail=tabsDetail.newTabSpec("mitab3 det");
+        specDetail.setContent(R.id.tab3Detail);
+        specDetail.setIndicator("Trab. Correctivo");
+        tabsDetail.addTab(specDetail);
+
+        tabsDetail.setCurrentTab(0);
     }
 
 
@@ -189,6 +249,58 @@ public class DetailTwoActivity extends AppCompatActivity {
         //return super.onOptionsItemSelected(item);
         //inte.putExtra("IdInformeTecnico", IdInformeTecnico);
         return true;
+    }
+
+
+    public void CerrarDetalle() {
+
+        if (!containerDetalle.isShown())
+        {
+            containerDetalle.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            containerDetalle.setVisibility(View.GONE);
+        }
+    }
+
+    public void ObtenerDatosDetalleCausa(int IdInformeFalla)
+    {
+        InformeTecnicoFalla objData = repository.informeTecnicoFallaRepository().findxId(IdInformeFalla);
+        setearDatosDetalles(objData);
+        //return objData;
+    }
+
+
+    public void setearDatosDetalles(InformeTecnicoFalla objData)
+    {
+        txvTecnicos.setText(objData.getNombresTecnicos());
+        txvSistema.setText(objData.getNombreSistema());
+        txvModo.setText(objData.getNombreModoFalla());
+        txvNroCaso.setText(objData.getNroCaso());
+
+        chkAceite.setChecked(objData.getAceite());
+        chkCombustible.setChecked(objData.getCombustible());
+        chkScanner.setChecked(objData.getScanner());
+
+        edtFileMuestAceite.setText(objData.getArchivoAceiteNombre());
+        edtFileMuestCombus.setText(objData.getArchivoCombustibleNombre());
+        edtFileScanner.setText(objData.getArchivoScannerNombre());
+
+        List<String> lista1 = repository.informeTecnicoFallaDiagnosticoRepository().findAllxInformeTecnicoFalla(objData.getIdInformeTecnicoFalla());
+        List<String> lista2 = repository.informeTecnicoFallaCausaRepository().findAllxInformeTecnicoFalla(objData.getIdInformeTecnicoFalla());
+        List<String> lista3 = repository.informeTecnicoFallaCorrectivosRepository().findAllxInformeTecnicoFalla(objData.getIdInformeTecnicoFalla());
+
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, lista1);
+        listDiagnostico.setAdapter(adapter1);
+
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, lista2);
+        listCausaFalla.setAdapter(adapter2);
+
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, lista3);
+        listTrabajocorrec.setAdapter(adapter3);
+
+
     }
 
 

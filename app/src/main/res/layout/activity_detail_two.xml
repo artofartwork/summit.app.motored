@@ -8,13 +8,17 @@
     tools:context="com.movil.summmit.motorresapp.DetailTwoActivity">
 
     <LinearLayout
+        android:id="@+id/containerDetalle"
+        android:visibility="gone"
         android:padding="7dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-
-
+        <Button
+            android:id="@+id/btnCerrarDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar"/>
         <LinearLayout
             android:layout_marginBottom="5dp"
             android:gravity="center"
@@ -31,8 +35,6 @@
                 android:layout_height="wrap_content"
                 />
         </LinearLayout>
-
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -90,7 +92,6 @@
 
 
         </LinearLayout>
-
         <LinearLayout
             android:orientation="horizontal"
             android:gravity="center"
@@ -109,6 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <EditText
+                    android:editable="false"
+                    android:focusable="false"
                     android:enabled="false"
                     android:id="@+id/edtFileScanner"
                     android:layout_marginLeft="5dp"
@@ -138,6 +141,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <EditText
+                    android:editable="false"
+                    android:focusable="false"
                     android:enabled="false"
                     android:id="@+id/edtFileMuestAceite"
                     android:layout_marginLeft="5dp"
@@ -149,7 +154,6 @@
 
 
         </LinearLayout>
-
         <LinearLayout
             android:orientation="horizontal"
             android:gravity="center"
@@ -168,6 +172,8 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:editable="false"
+                    android:focusable="false"
                     android:id="@+id/edtFileMuestCombus"
                     android:enabled="false"
                     android:layout_marginLeft="5dp"
@@ -180,20 +186,70 @@
 
         </LinearLayout>
 
+        <TabHost android:id="@+id/tabhostDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
+                <TabWidget android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@android:id/tabs" />
+
+                <FrameLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@android:id/tabcontent" >
+
+                    <LinearLayout android:id="@+id/tab1Detail"
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ListView
+                            android:id="@+id/listDiagnostico"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </ListView>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/tab2Detail"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ListView
+                            android:id="@+id/listCausaFalla"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </ListView>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/tab3Detail"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        <ListView
+                            android:id="@+id/listTrabajocorrec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </ListView>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
 
 
 
 
 
     </LinearLayout>
-    <!--<FrameLayout
-        android:id="@+id/fragmentDetalle"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </FrameLayout>-->
 
     <TextView
         android:textSize="20sp"
@@ -236,31 +292,17 @@
                 android:id="@android:id/tabcontent" >
 
                 <LinearLayout android:id="@+id/tab1"
-
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
 
-                    <LinearLayout
-                        android:layout_margin="6dp"
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ListView
-                            android:id="@+id/lsvAdjuntos"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                        </ListView>
-
-                    </LinearLayout>
                     <ListView
-                        android:id="@+id/listDiagnostico"
+                        android:id="@+id/lsvAdjuntos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                     </ListView>
+
 
                 </LinearLayout>
 
