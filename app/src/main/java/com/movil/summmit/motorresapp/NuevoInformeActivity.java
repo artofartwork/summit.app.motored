@@ -81,9 +81,17 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
         initComponents();
         initBindComponentsSpinner();
 
+        edtFechafalla.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    showDatePickerDialog();
+                }
+            }
+        });
         edtFechafalla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 showDatePickerDialog();
             }
         });
