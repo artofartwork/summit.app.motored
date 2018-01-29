@@ -22,34 +22,39 @@
             android:gravity="center">
 
             <LinearLayout
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:layout_width="wrap_content"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EMPRESA"/>
+                    android:text="EMPRESA" />
+
                 <Spinner
                     android:id="@+id/spnEmpresa"
-                    android:layout_width="190dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
+
             <LinearLayout
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:layout_width="wrap_content"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SUCURSAL"/>
+                    android:text="SUCURSAL" />
+
                 <Spinner
                     android:id="@+id/spnSucursal"
-                    android:layout_width="190dp"
+                    android:layout_width="151dp"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
 
@@ -64,34 +69,39 @@
             android:gravity="center">
 
             <LinearLayout
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:layout_width="wrap_content"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AREA"/>
+                    android:text="AREA" />
+
                 <Spinner
                     android:id="@+id/spnArea"
-                    android:layout_width="190dp"
+                    android:layout_width="174dp"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
+
             <LinearLayout
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:layout_width="wrap_content"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="MARCA"/>
+                    android:text="MARCA" />
+
                 <Spinner
                     android:id="@+id/spnMarca"
-                    android:layout_width="190dp"
+                    android:layout_width="156dp"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
 
@@ -106,19 +116,20 @@
             android:gravity="center">
 
             <LinearLayout
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:layout_width="wrap_content"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="MODELO" />
+
                 <Spinner
                     android:id="@+id/spnModelo"
-                    android:layout_width="190dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
 

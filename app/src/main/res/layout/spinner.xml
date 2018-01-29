@@ -3,6 +3,11 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="5dp"
+    android:textAlignment="gravity"
+    android:spinnerMode="dropdown"
+    android:background="@android:color/transparent"
+    android:layout_centerVertical="true"
     android:textSize="14sp"
+    android:layout_marginLeft="5dp"
     android:textColor="#3684D7"
      />
