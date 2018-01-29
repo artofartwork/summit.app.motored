@@ -24,16 +24,17 @@
             <LinearLayout
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EMPRESA" />
+                    android:text="EMPRESA"
+                    />
 
                 <Spinner
+                    style="@style/spinner_style"
                     android:id="@+id/spnEmpresa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
@@ -43,7 +44,6 @@
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:background="@drawable/border"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -53,6 +53,7 @@
                     android:text="SUCURSAL" />
 
                 <Spinner
+                    style="@style/spinner_style"
                     android:id="@+id/spnSucursal"
                     android:layout_width="151dp"
                     android:layout_height="wrap_content"></Spinner>
@@ -62,16 +63,15 @@
 
 
         <LinearLayout
-            android:padding="5dp"
-            android:layout_width="wrap_content"
-            android:orientation="horizontal"
+            android:layout_width="362dp"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <LinearLayout
-                android:layout_width="174dp"
+                android:layout_width="171dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -82,15 +82,15 @@
 
                 <Spinner
                     android:id="@+id/spnArea"
-                    android:layout_width="174dp"
+                    style="@style/spinner_style"
+                    android:layout_width="156dp"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="168dp"
+                android:layout_width="175dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:background="@drawable/border"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -101,7 +101,8 @@
 
                 <Spinner
                     android:id="@+id/spnMarca"
-                    android:layout_width="156dp"
+                    style="@style/spinner_style"
+                    android:layout_width="158dp"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
 
@@ -116,9 +117,8 @@
             android:gravity="center">
 
             <LinearLayout
-                android:layout_width="173dp"
+                android:layout_width="176dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/border"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -128,12 +128,16 @@
                     android:text="MODELO" />
 
                 <Spinner
+                    style="@style/spinner_style"
                     android:id="@+id/spnModelo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></Spinner>
             </LinearLayout>
 
             <Button
+                android:background="@drawable/button_motored"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:id="@+id/btnBuscar"
                 android:layout_marginLeft="40dp"
                 android:layout_width="wrap_content"

@@ -15,7 +15,7 @@
         android:gravity="center">
 
         <LinearLayout
-            android:background="@drawable/border"
+
             android:layout_width="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
@@ -25,6 +25,8 @@
                 android:layout_height="wrap_content"
                 android:text="Empresa"/>
             <TextView
+                android:background="@drawable/border_edittext"
+
                 android:entries="@array/opciones_arrays"
                 android:text="MOTORRED"
                 android:layout_width="180dp"
@@ -32,7 +34,7 @@
         </LinearLayout>
         <LinearLayout
             android:layout_marginLeft="5dp"
-            android:background="@drawable/border"
+
             android:gravity="center"
             android:layout_width="wrap_content"
             android:orientation="vertical"
@@ -43,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:text="Sucursal"/>
             <TextView
-                android:entries="@array/opciones_arrays"
+                android:background="@drawable/border_edittext"                android:entries="@array/opciones_arrays"
                 android:text="Sucursal 1"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"></TextView>
@@ -60,7 +62,7 @@
         android:gravity="center">
 
         <LinearLayout
-            android:background="@drawable/border"
+
             android:gravity="center"
             android:layout_width="wrap_content"
             android:orientation="vertical"
@@ -71,13 +73,12 @@
                 android:text="Area"/>
             <TextView
                 android:text="Area 1"
-
-                android:layout_width="180dp"
+                android:background="@drawable/border_edittext"                android:layout_width="180dp"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_marginLeft="5dp"
-            android:background="@drawable/border"
+
 
             android:layout_width="wrap_content"
             android:orientation="vertical"
@@ -88,7 +89,7 @@
                 android:layout_height="wrap_content" />
             <TextView
                 android:text="8745"
-                android:layout_width="180dp"
+                android:background="@drawable/border_edittext"                android:layout_width="180dp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
@@ -102,7 +103,7 @@
         android:gravity="center">
 
         <LinearLayout
-            android:background="@drawable/border"
+
             android:gravity="center"
             android:layout_width="wrap_content"
             android:orientation="vertical"
@@ -112,13 +113,13 @@
                 android:layout_height="wrap_content"
                 android:text="Marca"/>
             <TextView
-               android:text="Marca 1"
+                android:background="@drawable/border_edittext"               android:text="Marca 1"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_marginLeft="5dp"
-            android:background="@drawable/border"
+
             android:gravity="center"
             android:layout_width="wrap_content"
             android:orientation="vertical"
@@ -128,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:text="Modelo"/>
             <TextView
-                android:text="Modelo 1"
+                android:background="@drawable/border_edittext"                android:text="Modelo 1"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>
@@ -157,7 +158,7 @@
 
                 <LinearLayout
                     android:layout_marginLeft="12dp"
-                    android:background="@drawable/border"
+
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -167,7 +168,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cliente"/>
                     <TextView
-                        android:text="Juan Peres, Pedro Ramos, Juana Mejia"
+                        android:background="@drawable/border_edittext"                        android:text="Juan Peres, Pedro Ramos, Juana Mejia"
                         android:layout_width="320dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
@@ -184,7 +185,7 @@
                 android:gravity="center">
 
                 <LinearLayout
-                    android:background="@drawable/border"
+
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -194,13 +195,13 @@
                         android:layout_height="wrap_content"
                         android:text="VIN"/>
                     <TextView
-                        android:text="VIN 1"
+                        android:background="@drawable/border_edittext"                        android:text="VIN 1"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginLeft="5dp"
-                    android:background="@drawable/border"
+
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -211,13 +212,13 @@
                         android:layout_height="wrap_content"></TextView>
 
                     <TextView
-                        android:text="190"
+                        android:background="@drawable/border_edittext"                        android:text="190"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginLeft="5dp"
-                    android:background="@drawable/border"
+
 
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -229,7 +230,7 @@
                         android:layout_height="wrap_content"></TextView>
 
                     <TextView
-                        android:text="90"
+                        android:background="@drawable/border_edittext"                        android:text="90"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
@@ -245,7 +246,7 @@
                 android:gravity="center">
 
                 <LinearLayout
-                    android:background="@drawable/border"
+
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -255,13 +256,13 @@
                         android:layout_height="wrap_content"
                         android:text="Componente"/>
                     <TextView
-                        android:text="Componente 1"
+                        android:background="@drawable/border_edittext"                        android:text="Componente 1"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginLeft="3dp"
-                    android:background="@drawable/border"
+
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
@@ -271,7 +272,7 @@
                         android:layout_height="wrap_content"></TextView>
 
                     <TextView
-                        android:text="DFF-471"
+                        android:background="@drawable/border_edittext"                        android:text="DFF-471"
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
@@ -286,7 +287,7 @@
                 android:gravity="center">
 
                 <LinearLayout
-                    android:background="@drawable/border"
+
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -296,7 +297,7 @@
                         android:layout_height="wrap_content"
                         android:text="Aplicacion"/>
                     <TextView
-                       android:text="Aplicacion 1"
+                        android:background="@drawable/border_edittext"                       android:text="Aplicacion 1"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"></TextView>
                 </LinearLayout>
@@ -310,7 +311,7 @@
                         android:layout_height="wrap_content"
                         android:text="Fecha inicio garantia"/>
                     <TextView
-                        android:enabled="false"
+                        android:background="@drawable/border_edittext"                        android:enabled="false"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content"
                         android:text="2018/05/02"/>
@@ -323,7 +324,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <LinearLayout
-                    android:background="@drawable/border"
+
                     android:gravity="center"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
@@ -333,19 +334,20 @@
                         android:layout_height="wrap_content"
                         android:text="Fecha Falla"/>
                     <TextView
-                        android:id="@+id/fechafalla"
+                        android:background="@drawable/border_edittext"                        android:id="@+id/fechafalla"
                         android:text="2018/05/09"
                         android:layout_width="180dp"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
                 <LinearLayout
+
                     android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
 
                     <TextView
-                       android:text="Este es un comentario de reclamo."
+                        android:background="@drawable/border_edittext"                       android:text="Este es un comentario de reclamo."
                         android:gravity="left|top"
                         android:inputType="textMultiLine"
                         android:layout_width="180dp"
@@ -361,7 +363,7 @@
                android:text="Lista de antecedentes:"/>
 
             <ListView
-                android:layout_gravity="center"
+                android:background="@drawable/border_edittext"                android:layout_gravity="center"
                 android:id="@+id/listaAntecedentes"
                 android:layout_width="match_parent"
                 android:layout_height="200dp">

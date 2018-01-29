@@ -63,7 +63,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/border"
+
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -78,21 +78,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:layout_height="10dp"/>
+
+
             <EditText
-                android:inputType="none"
-                android:textSize="10sp"
                 android:id="@+id/edtTecnicos"
-                android:hint="Seleccione tecnicos"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content" />
-            <View
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:layout_height="10dp"/>
+                android:layout_height="27dp"
+                android:background="@drawable/border"
+                android:hint="Seleccione tecnicos"
+                android:inputType="none"
+                android:textSize="10sp" />
 
 
             <!--    <Spinner
@@ -111,7 +106,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:background="@drawable/border"
+
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -122,6 +117,7 @@
 
             </android.support.design.widget.TextInputLayout>
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sistema Falla:"/>
@@ -135,7 +131,7 @@
                     android:id="@+id/spnSistemaFalla"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-
+                    
                     ></Spinner>
             </android.support.design.widget.TextInputLayout>
 
@@ -145,7 +141,6 @@
 
         <LinearLayout
             android:layout_marginLeft="5dp"
-            android:background="@drawable/border"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -153,12 +148,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:text="Modo Falla:"/>
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/tmpModoFalla"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <Spinner
+                    
                     android:id="@+id/spnModoFalla"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"></Spinner>
@@ -169,21 +166,24 @@
 
         <LinearLayout
             android:layout_marginLeft="5dp"
-            android:background="@drawable/border"
+
+
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/tmpNrcaso"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
-                    android:inputType="none"
                     android:id="@+id/nrcaso"
-                    android:hint="# caso"
                     android:layout_width="100dp"
-                    android:layout_height="45dp" />
+                    android:layout_height="45dp"
+                    android:background="@drawable/border"
+                    android:hint="# caso"
+                    android:inputType="none" />
             </android.support.design.widget.TextInputLayout>
 
 
@@ -211,13 +211,15 @@
             android:id="@+id/tmpFileScanner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/edtFileScanner"
-                android:layout_marginLeft="5dp"
-                android:textSize="10sp"
-                android:hint="Seleccione file.."
                 android:layout_width="170dp"
-                android:layout_height="wrap_content" />
+                android:background="@drawable/border_edittext"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:hint="Seleccione file.."
+                android:textSize="10sp" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -247,10 +249,12 @@
             <EditText
                 android:id="@+id/edtFileMuestAceite"
                 android:layout_marginLeft="5dp"
+                android:background="@drawable/border_edittext"
+                android:layout_height="36dp"
                 android:hint="Seleccione file.."
                 android:textSize="10sp"
                 android:layout_width="170dp"
-                android:layout_height="wrap_content" />
+                />
         </android.support.design.widget.TextInputLayout>
 
 
@@ -284,7 +288,8 @@
                 android:hint="Seleccione file.."
                 android:textSize="10sp"
                 android:layout_width="170dp"
-                android:layout_height="wrap_content" />
+                android:background="@drawable/border_edittext"
+                android:layout_height="36dp" />
         </android.support.design.widget.TextInputLayout>
 
 
@@ -321,6 +326,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <Button
+                            android:background="@drawable/button_motored"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
                             android:id="@+id/btnDiagnostico"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
