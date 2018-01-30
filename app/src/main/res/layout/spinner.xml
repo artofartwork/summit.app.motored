@@ -11,4 +11,5 @@
     android:textSize="14sp"
     android:layout_marginLeft="5dp"
     android:textColor="#ffffff"
+    android:textStyle="bold"
      />
