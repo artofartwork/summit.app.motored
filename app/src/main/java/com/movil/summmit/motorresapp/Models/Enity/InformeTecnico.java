@@ -4,6 +4,7 @@ import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Modelo;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 /**
@@ -11,7 +12,7 @@ import java.sql.Date;
  */
 
 @DatabaseTable
-public class InformeTecnico {
+public class InformeTecnico implements Serializable {
 
 
 

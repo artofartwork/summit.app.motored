@@ -153,13 +153,13 @@ public class ConclusionesRecomendacionesActivity extends AppCompatActivity {
             {
                 case "C":
                     lstConclusiones.add(comentario);
-                    adaptatadorComentario = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, lstConclusiones);
+                    adaptatadorComentario = new ArrayAdapter<>(this,R.layout.list, lstConclusiones);
                     lsvConclusiones.setAdapter(adaptatadorComentario);
                     adaptatadorComentario = null;
                     break;
                 case "R":
                     lstRecomendaciones.add(comentario);
-                    adaptatadorComentario = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, lstRecomendaciones);
+                    adaptatadorComentario = new ArrayAdapter<>(this,R.layout.list, lstRecomendaciones);
                     lsvRecomendaciones.setAdapter(adaptatadorComentario);
                     adaptatadorComentario = null;
                     break;

@@ -28,46 +28,27 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TabHost;
 import android.widget.Toast;
-
 import com.movil.summmit.motorresapp.Adapters.AdapterEmpleado;
 import com.movil.summmit.motorresapp.Adapters.CasoTecnicoAdapter;
-import com.movil.summmit.motorresapp.Dialogs.DialogCasosTecnicos;
-import com.movil.summmit.motorresapp.Dialogs.DialogTecnicos;
 import com.movil.summmit.motorresapp.Listeners.OnItemClickListener;
 import com.movil.summmit.motorresapp.LogicMethods.Repository;
-import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoConclusiones;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFalla;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaCausa;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaCorrectivos;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaDiagnostico;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFallaxEmpleado;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.CasoTecnico;
-import com.movil.summmit.motorresapp.Models.Enity.Maestro.Cliente;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Empleado;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.HelpMaestro;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.MaestraArgu;
 import com.movil.summmit.motorresapp.Storage.Files.FilesControl;
-/*import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoFallaCausaRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoFallaCorrectivosRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoFallaDiagnosticoRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoFallaRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoFallaxEmpleadoRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.CasoTecnicoRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.EmpleadoRepository;
-import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.MaestraArguRepository;*/
 import com.vincent.filepicker.Constant;
 import com.vincent.filepicker.activity.NormalFilePickActivity;
 import com.vincent.filepicker.filter.entity.NormalFile;
-
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FilenameFilter;
-import java.io.IOException;
-import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity implements OnItemClickListener  {
     LinearLayout layoutTecnicos, layoutCasoTecnico;
@@ -83,33 +64,22 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
 
     //repositorys
     Repository repository;
-  /*  InformeTecnicoFallaxEmpleadoRepository informeTecnicoFallaxEmpleadoRepository;
-    CasoTecnicoRepository casoTecnicoRepository;
-    MaestraArguRepository maestraArguRepository;
-    EmpleadoRepository empleadoRepository;
-    InformeTecnicoFallaRepository informeTecnicoFallaRepository;
-    InformeTecnicoFallaDiagnosticoRepository informeTecnicoFallaDiagnosticoRepository;
-    InformeTecnicoFallaCausaRepository informeTecnicoFallaCausaRepository;
-    InformeTecnicoFallaCorrectivosRepository informeTecnicoFallaCorrectivosRepository;*/
-    //----
 
     //adpater coments
     ArrayAdapter<String> adapterComentarios;
     AdapterEmpleado adapterEmpleado;
     CasoTecnicoAdapter casoTecnicoAdapter;
     //---
-
     //listas comentarios
     List<InformeTecnicoFallaDiagnostico> listaInformeTecnicoFallaDiagnosticos;
     List<InformeTecnicoFallaCausa> listaInformeTecnicoFallaCausa;
     List<InformeTecnicoFallaCorrectivos> listaInformeTecnicoFallaCorrectivo;
-
     //
     List<Empleado>listaEmpleados;
     List<CasoTecnico>listaCasoTecnico;
 
     java.util.Date utilDatehoy;
-    java.sql.Date sqlDatehoy; //= new java.sql.Date(utilDatehoy.getTime());
+    java.sql.Date sqlDatehoy;
 
     Integer inputFileSelected = 0;
     FilesControl filesControl;
@@ -117,7 +87,6 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
     static NormalFile fileScanner;
     static NormalFile fileAceite;
     static NormalFile fileCombustible;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,19 +101,12 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
         utilDatehoy = new java.util.Date();
         sqlDatehoy =  new java.sql.Date(utilDatehoy.getTime());
 
-        //initRepository();
-
         initListas();
 
-        //--obtengo el id de informe tecnico de la vista de crear registrof
-
-        //----------
         initComponents();
         initComponentsTabs();
 
         lsvTecnicos.setAdapter(adapterEmpleado);
-
-
 
     }
 
@@ -159,19 +121,6 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
 
         //--
     }
-   /* public void initRepository()
-    {
-        //inicializo repositrios
-        informeTecnicoFallaxEmpleadoRepository = new InformeTecnicoFallaxEmpleadoRepository(this);
-        casoTecnicoRepository = new CasoTecnicoRepository(this);
-        maestraArguRepository = new MaestraArguRepository(this);
-        empleadoRepository = new EmpleadoRepository(this);
-        informeTecnicoFallaRepository = new InformeTecnicoFallaRepository(this);
-        informeTecnicoFallaDiagnosticoRepository = new InformeTecnicoFallaDiagnosticoRepository(this);
-        informeTecnicoFallaCausaRepository = new InformeTecnicoFallaCausaRepository(this);
-        informeTecnicoFallaCorrectivosRepository = new InformeTecnicoFallaCorrectivosRepository(this);
-        //---------------
-    }*/
 
     public void initComponents()
     {
@@ -194,7 +143,6 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
 
             }
         });
@@ -279,7 +227,14 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
                 openFileExplorer();
             }
         });
-
+        edtFileScanner.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                inputFileSelected = 1;
+                if (hasFocus) {
+                    openFileExplorer();
+                }
+            }
+        });
         edtFileMuestAceite = (EditText)findViewById(R.id.edtFileMuestAceite);
         edtFileMuestAceite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -288,12 +243,28 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
                 openFileExplorer();
             }
         });
+        edtFileMuestAceite.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    inputFileSelected = 2;
+                    openFileExplorer();
+                }
+            }
+        });
         edtFileMuestCombus = (EditText)findViewById(R.id.edtFileMuestCombus);
         edtFileMuestCombus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 inputFileSelected = 3;
                 openFileExplorer();
+            }
+        });
+        edtFileMuestCombus.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    inputFileSelected = 3;
+                    openFileExplorer();
+                }
             }
         });
 
@@ -378,6 +349,13 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
 
 
         edtTecnicos = (EditText)findViewById(R.id.edtTecnicos);
+        edtTecnicos.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    mostrarListaTecnicos();
+                }
+            }
+        });
         edtTecnicos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -549,12 +527,7 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
         return true;
     }
 
-    public void GuardarFiles(int IdInformeTecnicoFalla)
-    {
 
-
-
-    }
 
     public Boolean validateForm()
     {
@@ -665,7 +638,7 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
         {
             listaString.add(obj.getDescripcion());
         }
-        adapterComentarios = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaString);
+        adapterComentarios = new ArrayAdapter<String>(this,R.layout.list, listaString);
         listDiagnostico.setAdapter(adapterComentarios);
     }
     private void populateListCausa() {
@@ -674,7 +647,7 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
         {
             listaString.add(obj.getDescripcion());
         }
-        adapterComentarios = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaString);
+        adapterComentarios = new ArrayAdapter<String>(this,R.layout.list, listaString);
         listCausaFalla.setAdapter(adapterComentarios);
     }
     private void populateListCorrectivos() {
@@ -683,7 +656,7 @@ public class DetalleCausaAnalisisFallaActivity extends AppCompatActivity impleme
         {
             listaString.add(obj.getDescripcion());
         }
-        adapterComentarios= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaString);
+        adapterComentarios= new ArrayAdapter<String>(this,R.layout.list, listaString);
         listTrabajocorrec.setAdapter(adapterComentarios);
     }
 

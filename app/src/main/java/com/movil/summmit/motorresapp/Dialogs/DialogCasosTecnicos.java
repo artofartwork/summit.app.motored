@@ -56,7 +56,7 @@ public class DialogCasosTecnicos extends DialogFragment {
         lista.add("Caso 5");
         lista.add("Caso 6");
 
-        ArrayAdapter<String> adapta = new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1, lista);
+        ArrayAdapter<String> adapta = new ArrayAdapter<String>(getContext(),R.layout.list, lista);
         ListView lis = (ListView)view.findViewById(R.id.milista);
         lis.setAdapter(adapta);
 

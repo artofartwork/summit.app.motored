@@ -21,6 +21,8 @@ public class InformeTecnicoFallaDiagnostico {
     @DatabaseField
     private Date AudFechaRegistro;
 
+    private Boolean Nuevo = false;
+
     public int getIdFallaDiagnostico() {
         return IdFallaDiagnostico;
     }
@@ -59,5 +61,13 @@ public class InformeTecnicoFallaDiagnostico {
 
     public void setAudFechaRegistro(Date audFechaRegistro) {
         AudFechaRegistro = audFechaRegistro;
+    }
+
+    public Boolean getNuevo() {
+        return Nuevo;
+    }
+
+    public void setNuevo(Boolean nuevo) {
+        Nuevo = nuevo;
     }
 }

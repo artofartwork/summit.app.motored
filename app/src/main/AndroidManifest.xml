@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -30,18 +30,15 @@
         <activity android:name=".ListaInformesActivity" />
         <activity android:name=".NuevoInformeActivity" />
         <activity android:name=".AnalisisCausaFallaActivity" />
-        <activity android:name=".DetalleCausaAnalisisFallaActivity" >
-
-        </activity>
+        <activity android:name=".DetalleCausaAnalisisFallaActivity"></activity>
         <activity android:name=".ConclusionesRecomendacionesActivity" />
         <activity android:name=".AdjuntosActivity" />
         <activity android:name=".GuardarEnviarActivity" />
         <activity android:name=".EditarInformeTecnicoActivity" />
-        <activity android:name=".VerInformeTecnicoActivity" />
-        <activity android:name=".VerInformeAcivityDosActivity" />
         <activity android:name=".FilePickActivity" />
         <activity android:name=".DetailInformeTecnicoActivity" />
-        <activity android:name=".DetailTwoActivity"></activity>
+        <activity android:name=".DetailTwoActivity" />
+        <activity android:name=".EditarDetalleCausaActivity"></activity>
     </application>
 
 </manifest>

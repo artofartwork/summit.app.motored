@@ -119,6 +119,20 @@ public class InformeTecnicoFallaCausaRepository {
         return null;
     }
 
+    public List<InformeTecnicoFallaCausa> AllxInformeTecnicoFalla(int IdInformeTecnicoFalla) {
+        try {
+
+            QueryBuilder qb = entidadDao.queryBuilder();
+            qb.where()
+                    .eq("IdInformeTecnicoFalla", IdInformeTecnicoFalla);
+            return qb.query();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 
     public long getNumberOfNotes() {
         QueryBuilder<InformeTecnicoFallaCausa, Integer> qb = entidadDao.queryBuilder();

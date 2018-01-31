@@ -6,8 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
+    android:background="@color/fondoMotored"
     tools:context="com.movil.summmit.motorresapp.AnalisisCausaFallaActivity">
-    
+
+
     <Button
         android:background="@drawable/button_motored"
         android:textColor="#ffffff"
@@ -16,6 +18,7 @@
         android:textAlignment="textEnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
         android:text="Agregar item"/>
 
 

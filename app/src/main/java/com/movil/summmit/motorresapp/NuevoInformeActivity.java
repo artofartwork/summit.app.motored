@@ -1,13 +1,17 @@
 package com.movil.summmit.motorresapp;
 
 import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -53,20 +57,11 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
 
     Spinner spnEmpresa, spnSucursal, spnArea, spnMarca, spnModelo, spnCliente, spnVin, spnComponente, spnAplicacion;
     EditText edtNroOT, edtKm, edtHorometro,edtSerie,edtFechIniGarantia, edtReclamo,edtFechafalla;
-    //ArrayAdapter<String> adapta;
     TextInputLayout tmpEmpresa, tmpSucursal, tmpArea, tmpOt, tmpMarca, tmpModelo, tmpCliente, tmpVin, tmpKm, tmpHorometro, tmpComponente, tmpSerie,tmpAplicacion, tmpFechafalla, tmpReclamo ;
     ListView listaAntecedentes;
     Button addAntecedente;
     List<InformeTecnicoAntecedente> lstInformeTecnicoAntecedentesAgregados;
     ArrayAdapter<String> adapterStringAntecedentes;
-    /*private InformeTecnicoRepository informeTecnicoRepository;
-    private InformeTecnicoAntecedenteRepository informeTecnicoAntecedenteRepository;
-    private EmpresaRepository empresaRepository;
-    private MarcaRepository marcaRepository;
-    private ModeloRepository modeloRepository;
-    private MaestraArguRepository maestraArguRepository;
-    private ClienteRepository clienteRepository;
-    private VinRepository vinRepository;*/
     private Repository repository;
     private FilesControl controlFile;
 
@@ -77,22 +72,28 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
         controlFile = new FilesControl();
         repository = new Repository(this);
         lstInformeTecnicoAntecedentesAgregados = new ArrayList<>();
-       // initRepositorys();
         initComponents();
         initBindComponentsSpinner();
 
-        edtFechafalla.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        /*edtFechafalla.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
                     showDatePickerDialog();
                 }
             }
-        });
+        });*/
         edtFechafalla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 showDatePickerDialog();
+            }
+        });
+        edtFechafalla.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    showDatePickerDialog();
+                }
             }
         });
 
@@ -104,18 +105,6 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
         });
 
     }
-
-   /* private void initRepositorys() {
-        informeTecnicoRepository = new InformeTecnicoRepository(this);
-        informeTecnicoAntecedenteRepository = new InformeTecnicoAntecedenteRepository(this);
-        empresaRepository = new EmpresaRepository(this);
-        marcaRepository = new MarcaRepository(this);
-        modeloRepository = new ModeloRepository(this);
-        maestraArguRepository = new MaestraArguRepository(this);
-        clienteRepository = new ClienteRepository(this);
-        vinRepository = new VinRepository(this);
-    }*/
-
     private void initBindComponentsSpinner() {
 
         List<Empresa> lstEmpresa = repository.empresaRepository().findAll();
@@ -257,10 +246,9 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
 
             String fechafalla = edtFechafalla.getText().toString().trim();
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
             java.util.Date utilDate = format.parse(fechafalla);
             java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-
-
             objInforme.setFechaFalla(sqlDate);
 
             String reclamo =  edtReclamo.getText().toString().trim();
@@ -277,7 +265,9 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
             objInforme.setAudUsuarioModifica(1);
             objInforme.setAudUsuarioRegistro(1);
 
-            java.util.Date utilDatefechaini = format.parse(fechafalla);
+            String fechaini = edtFechIniGarantia.getText().toString().trim();
+
+            java.util.Date utilDatefechaini = format.parse(fechaini);
             java.sql.Date sqlDatefechaini = new java.sql.Date(utilDatefechaini.getTime());
             objInforme.setFechaInicio(sqlDatefechaini);
 
@@ -499,7 +489,7 @@ public class NuevoInformeActivity extends AppCompatActivity implements OnAnteced
         {
             listaString.add(obj.getDescripcion());
         }
-        adapterStringAntecedentes = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, listaString);
+        adapterStringAntecedentes = new ArrayAdapter<String>(this,R.layout.list, listaString);
         listaAntecedentes.setAdapter(adapterStringAntecedentes);
     }
 

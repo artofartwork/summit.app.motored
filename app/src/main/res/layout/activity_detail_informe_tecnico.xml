@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondoMotored"
     tools:context="com.movil.summmit.motorresapp.DetailInformeTecnicoActivity">
 
     <LinearLayout
@@ -21,7 +22,7 @@
             android:gravity="center"
             android:layout_height="wrap_content">
             <TextView
-
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empresa"/>
@@ -47,6 +48,7 @@
 
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sucursal"/>
@@ -82,6 +84,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Area"/>
@@ -103,6 +106,7 @@
             android:gravity="center"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="N° OT"/>
@@ -131,6 +135,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Marca"/>
@@ -151,6 +156,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Modelo"/>
@@ -180,6 +186,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cliente"/>
@@ -200,6 +207,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="VIN"/>
@@ -229,6 +237,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="KM"/>
@@ -249,6 +258,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Horometro"/>
@@ -269,6 +279,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Componente"/>
@@ -297,6 +308,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Serie"/>
@@ -317,6 +329,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Aplicacion"/>
@@ -337,11 +350,13 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fecha Garantia"/>
 
             <TextView
+
                 android:id="@+id/txvFechaGarantia"
                 android:layout_width="120dp"
                 android:layout_height="30dp"
@@ -373,10 +388,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/text_style"
                     android:text="Fecha Falla"/>
 
 
                 <TextView
+
                     android:id="@+id/txvFechaFalla"
                     android:layout_width="160dp"
                     android:layout_height="30dp"
@@ -404,6 +421,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/text_style"
                 android:text="Reclamo del cliente"/>
 
             <TextView

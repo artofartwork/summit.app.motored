@@ -2,11 +2,14 @@ package com.movil.summmit.motorresapp.Dialogs;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 
 import com.movil.summmit.motorresapp.Listeners.OnAntecedenteListener;
@@ -29,6 +32,8 @@ public class DialogAntecedente extends DialogFragment {
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.layout_dialog_antecedente, null);
 
+
+
         builder.setView(view)
                 .setTitle("Antecedente")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -47,6 +52,8 @@ public class DialogAntecedente extends DialogFragment {
                 });
 
         comentario = (EditText) view.findViewById(R.id.comentarioAntecedente);
+
+
 
         return builder.create();
     }

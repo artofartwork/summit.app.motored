@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
      android:id="@+id/container"
+    android:background="@color/fondoMotored"
     tools:context="com.movil.summmit.motorresapp.ListaInformesActivity">
 
     <LinearLayout
@@ -28,6 +29,8 @@
                 android:orientation="vertical">
 
                 <TextView
+
+                    style="@style/text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="EMPRESA"
@@ -48,6 +51,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style="@style/text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SUCURSAL" />
@@ -76,6 +80,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style="@style/text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="AREA" />
@@ -95,6 +100,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style="@style/text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="MARCA" />
@@ -123,6 +129,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    style="@style/text_style"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="MODELO" />

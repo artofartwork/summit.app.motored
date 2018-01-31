@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondoMotored"
     tools:context="com.movil.summmit.motorresapp.VerInformeTecnicoActivity">
 
     <LinearLayout
@@ -21,6 +22,7 @@
             android:gravity="center"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empresa"/>
@@ -41,6 +43,7 @@
 
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sucursal"/>
@@ -68,6 +71,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Area"/>
@@ -84,6 +88,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:text="N° OT"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content" />
@@ -109,6 +114,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Marca"/>
@@ -125,6 +131,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
             <TextView
+                style="@style/text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Modelo"/>
@@ -164,6 +171,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cliente"/>
@@ -191,6 +199,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="VIN"/>
@@ -207,6 +216,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:text="KM"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"></TextView>
@@ -225,6 +235,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
+                        style="@style/text_style"
                         android:text="Horometro"
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"></TextView>
@@ -252,6 +263,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Componente"/>
@@ -267,6 +279,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                             android:text="Serie"
                         android:layout_width="170dp"
                         android:layout_height="wrap_content"></TextView>
@@ -293,6 +306,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Aplicacion"/>
@@ -307,6 +321,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fecha inicio garantia"/>
@@ -330,6 +345,7 @@
                     android:orientation="vertical"
                     android:layout_height="wrap_content">
                     <TextView
+                        style="@style/text_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fecha Falla"/>
@@ -358,12 +374,15 @@
             </LinearLayout>
 
            <TextView
+               style="@style/text_style"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="Lista de antecedentes:"/>
 
             <ListView
-                android:background="@drawable/border_edittext"                android:layout_gravity="center"
+
+                android:background="@drawable/border_edittext"
+                android:layout_gravity="center"
                 android:id="@+id/listaAntecedentes"
                 android:layout_width="match_parent"
                 android:layout_height="200dp">

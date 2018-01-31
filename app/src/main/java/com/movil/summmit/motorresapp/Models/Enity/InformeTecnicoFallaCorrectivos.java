@@ -21,6 +21,8 @@ public class InformeTecnicoFallaCorrectivos {
     @DatabaseField
     private Date AudFechaRegistro;
 
+    private Boolean Nuevo = false;
+
     public int getIdFallaCorrectivos() {
         return IdFallaCorrectivos;
     }
@@ -59,5 +61,13 @@ public class InformeTecnicoFallaCorrectivos {
 
     public void setAudFechaRegistro(Date audFechaRegistro) {
         AudFechaRegistro = audFechaRegistro;
+    }
+
+    public Boolean getNuevo() {
+        return Nuevo;
+    }
+
+    public void setNuevo(Boolean nuevo) {
+        Nuevo = nuevo;
     }
 }

@@ -21,6 +21,9 @@ enum ButtonsState {
 
 public class SwipeController extends Callback {
 
+    //1 sera para editar y eliminar
+    //2 sera para ver y editar, pero ver no tendra efecto solo se mostrara
+    private Integer Tipo;
     private boolean swipeBack = false;
 
     private ButtonsState buttonShowedState = ButtonsState.GONE;
@@ -33,8 +36,9 @@ public class SwipeController extends Callback {
 
     private static final float buttonWidth = 300;
 
-    public SwipeController(SwipeControllerActions buttonsActions) {
+    public SwipeController(Integer Tipo, SwipeControllerActions buttonsActions) {
         this.buttonsActions = buttonsActions;
+        this.Tipo = Tipo;
     }
 
     @Override
@@ -161,9 +165,18 @@ public class SwipeController extends Callback {
         drawText("EDIT", c, leftButton, p);
 
         RectF rightButton = new RectF(itemView.getRight() - buttonWidthWithoutPadding, itemView.getTop(), itemView.getRight(), itemView.getBottom());
-        p.setColor(Color.CYAN);
-        c.drawRoundRect(rightButton, corners, corners, p);
-        drawText("VER", c, rightButton, p);
+        if (Tipo == 1)
+        {
+            p.setColor(Color.RED);
+            c.drawRoundRect(rightButton, corners, corners, p);
+            drawText("ELIMINAR", c, rightButton, p);
+        }
+        else
+        {
+            p.setColor(Color.CYAN);
+            c.drawRoundRect(rightButton, corners, corners, p);
+            drawText("VER", c, rightButton, p);
+        }
 
         buttonInstance = null;
         if (buttonShowedState == ButtonsState.LEFT_VISIBLE) {

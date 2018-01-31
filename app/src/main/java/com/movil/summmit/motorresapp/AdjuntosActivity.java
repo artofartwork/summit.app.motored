@@ -73,6 +73,15 @@ public class AdjuntosActivity extends AppCompatActivity {
                 openFileExplorer();
             }
         });
+        edtVin.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    Seleccion = 0;
+                    inputFileSelected = 1;
+                    openFileExplorer();
+                }
+            }
+        });
         edtKmHoras = (EditText)findViewById(R.id.edtKmHoras);
         edtKmHoras.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +89,15 @@ public class AdjuntosActivity extends AppCompatActivity {
                 Seleccion = 0;
                 inputFileSelected = 2;
                 openFileExplorer();
+            }
+        });
+        edtKmHoras.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    Seleccion = 0;
+                    inputFileSelected = 2;
+                    openFileExplorer();
+                }
             }
         });
         layout =(LinearLayout)findViewById(R.id.agregados);

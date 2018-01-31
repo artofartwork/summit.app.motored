@@ -116,7 +116,7 @@ public class DetailTwoActivity extends AppCompatActivity {
         {
             datos.add(obj.getDescripcion());
         }
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, datos);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list, datos);
         lsvRecomendaciones.setAdapter(adapter);
     }
     private void initConclusiones()
@@ -127,7 +127,7 @@ public class DetailTwoActivity extends AppCompatActivity {
         {
             datos.add(obj.getDescripcion());
         }
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, datos);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list, datos);
         lsvConclusiones.setAdapter(adapter);
     }
     private void initListaAdjjuntos()
@@ -138,7 +138,7 @@ public class DetailTwoActivity extends AppCompatActivity {
         {
             adjuntosname.add(obj.getArchivoNombre());
         }
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, adjuntosname);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list, adjuntosname);
         lsvAdjuntos.setAdapter(adapter);
     }
 
@@ -151,7 +151,7 @@ public class DetailTwoActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(mAdapter);
 
-        swipeController = new SwipeController(new SwipeControllerActions() {
+        swipeController = new SwipeController(2, new SwipeControllerActions() {
             @Override
             public void onRightClicked(int position) {
 
@@ -291,13 +291,13 @@ public class DetailTwoActivity extends AppCompatActivity {
         List<String> lista2 = repository.informeTecnicoFallaCausaRepository().findAllxInformeTecnicoFalla(objData.getIdInformeTecnicoFalla());
         List<String> lista3 = repository.informeTecnicoFallaCorrectivosRepository().findAllxInformeTecnicoFalla(objData.getIdInformeTecnicoFalla());
 
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, lista1);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,R.layout.list, lista1);
         listDiagnostico.setAdapter(adapter1);
 
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, lista2);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,R.layout.list, lista2);
         listCausaFalla.setAdapter(adapter2);
 
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, lista3);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,R.layout.list, lista3);
         listTrabajocorrec.setAdapter(adapter3);
 
 

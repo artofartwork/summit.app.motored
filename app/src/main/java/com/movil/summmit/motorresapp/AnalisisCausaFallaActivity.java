@@ -7,17 +7,16 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
-
 import com.movil.summmit.motorresapp.Adapters.AnalisisCausaFallaAdapter;
-import com.movil.summmit.motorresapp.Dialogs.DialogDetalleCausaAnalisisFalla;
+import com.movil.summmit.motorresapp.LogicMethods.Repository;
 import com.movil.summmit.motorresapp.Models.Enity.InformeTecnicoFalla;
-import com.movil.summmit.motorresapp.Storage.db.repository.InformeTecnicoFallaRepository;
+import com.movil.summmit.motorresapp.Models.Enity.Maestro.Empleado;
 import com.movil.summmit.motorresapp.controllerSwipe.SwipeController;
 import com.movil.summmit.motorresapp.controllerSwipe.SwipeControllerActions;
 
@@ -28,22 +27,20 @@ import java.util.List;
 public class AnalisisCausaFallaActivity extends AppCompatActivity {
 
     AnalisisCausaFallaAdapter mAdapter;
-    InformeTecnicoFallaRepository informeTecnicoFallaRepository;
+    Repository repository;
     Button addDetalleCausaFalla;
     SwipeController swipeController = null;
     int IdInformeTecnico = 0;
+    List<InformeTecnicoFalla> players;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analisis_causa_falla);
+        repository = new Repository(this);
 
-        informeTecnicoFallaRepository = new InformeTecnicoFallaRepository(this);
-
-        //--obtengo el id de informe tecnico de la vista de crear registro
         Intent myIntent = getIntent(); // gets the previously created intent
         IdInformeTecnico = myIntent.getIntExtra("IdInformeTecnico", 0);
         //---
-
 
         addDetalleCausaFalla = (Button)findViewById(R.id.addDetalleCausaFalla);
 
@@ -64,8 +61,7 @@ public class AnalisisCausaFallaActivity extends AppCompatActivity {
     }
 
     private void setPlayersDataAdapter() {
-        List<InformeTecnicoFalla> players = new ArrayList<>();
-        players = informeTecnicoFallaRepository.findAllxInforme(IdInformeTecnico);
+        players =  repository.informeTecnicoFallaRepository().findAllxInforme(IdInformeTecnico);
 
         mAdapter = new AnalisisCausaFallaAdapter(players);
     }
@@ -76,17 +72,23 @@ public class AnalisisCausaFallaActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(mAdapter);
 
-        swipeController = new SwipeController(new SwipeControllerActions() {
+        swipeController = new SwipeController(1, new SwipeControllerActions() {
             @Override
             public void onRightClicked(int position) {
-                //mAdapter.players.remove(position);
-                //mAdapter.notifyItemRemoved(position);
-                //mAdapter.notifyItemRangeChanged(position, mAdapter.getItemCount());
-            }
 
+                InformeTecnicoFalla obj =players.get(position);
+                repository.informeTecnicoFallaRepository().delete(obj);
+                mAdapter.players.remove(position);
+                mAdapter.notifyItemRemoved(position);
+                mAdapter.notifyItemRangeChanged(position, mAdapter.getItemCount());
+            }
             @Override
             public void onLeftClicked(int position) {
-                Toast.makeText(AnalisisCausaFallaActivity.this, "hola mundo" + position, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(AnalisisCausaFallaActivity.this, "hola editame" + position, Toast.LENGTH_SHORT).show();
+                Intent inte =new Intent(AnalisisCausaFallaActivity.this, EditarDetalleCausaActivity.class);
+                InformeTecnicoFalla obj =players.get(position);
+                inte.putExtra("IdInformeTecnicoFalla", obj.getIdInformeTecnicoFalla());
+                startActivity(inte);
             }
         });
 
@@ -129,6 +131,7 @@ public class AnalisisCausaFallaActivity extends AppCompatActivity {
         //inte.putExtra("IdInformeTecnico", IdInformeTecnico);
         return true;
     }
+
 
     /*public void openDialogDetalleFalla()
     {

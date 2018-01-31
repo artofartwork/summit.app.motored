@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:statusBarColor="@color/cardview_dark_background"
+    android:background="@color/fondoMotored"
+    tools:context="com.movil.summmit.motorresapp.DetalleCausaAnalisisFallaActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutTecnicos"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <Button
+            android:background="@drawable/button_motored"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/btnSavedTecnicos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OK" />
+        <ListView
+            android:id="@+id/lsvTecnicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCasoTecnico"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnSavedCasoTecnico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="OK" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lsvCasoTecnico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/eT1"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#00000000"
+        android:cursorVisible="false"
+        android:ems="10" />
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- <TextView
+             android:textAlignment="center"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Tecnicos:"/>-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tmpTecnicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:editable="false"
+                android:id="@+id/edtTecnicos"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@drawable/border_edittext"
+                android:hint="Seleccione tecnicos"
+                android:inputType="none"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"/>
+
+
+            <!--    <Spinner
+                    android:id="@+id/spnTecnicos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>-->
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="-10dp">
+
+        <LinearLayout
+            android:layout_marginLeft="-15dp"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/text_style"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Sistema Falla:" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tmpSistemaFalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp">
+
+                <Spinner
+                    android:id="@+id/spnSistemaFalla"
+                    style="@style/spinner_style"
+                    android:layout_width="135dp"
+                    android:layout_height="45dp"></Spinner>
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modo Falla:" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tmpModoFalla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-7dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spnModoFalla"
+                    style="@style/spinner_style"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"></Spinner>
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tmpNrcaso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <EditText
+
+                    android:id="@+id/nrcaso"
+                    android:layout_width="67dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/border_edittext"
+                    android:hint="# caso"
+                    android:inputType="none" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            style="@style/text_style"
+            android:id="@+id/chkScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uso Scanner" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tmpFileScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtFileScanner"
+                android:layout_width="170dp"
+                android:background="@drawable/border_edittext"
+                android:layout_height="36dp"
+                android:layout_marginLeft="5dp"
+                android:editable="false"
+                android:hint="Seleccione file.."
+                android:textSize="10sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            style="@style/text_style"
+            android:id="@+id/chkAceite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muestra Aceite" />
+
+        <View
+            android:layout_width="43dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tmpFileMuestAceite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtFileMuestAceite"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/border_edittext"
+                android:layout_height="36dp"
+                android:hint="Seleccione file.."
+                android:textSize="10sp"
+                android:editable="false"
+                android:layout_width="170dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            style="@style/text_style"
+            android:id="@+id/chkCombustible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muestra Combustible" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tmpFileMuestCombus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtFileMuestCombus"
+
+                android:layout_marginLeft="5dp"
+                android:hint="Seleccione file.."
+                android:textSize="10sp"
+                android:editable="false"
+                android:layout_width="170dp"
+                android:background="@drawable/border_edittext"
+                android:layout_height="36dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tab1"
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_margin="6dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:background="@drawable/button_motored"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:id="@+id/btnDiagnostico"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@android:style/Theme.Material.Light.Voice"
+                            android:text="Agregar"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+                        <EditText
+                            android:id="@+id/edtDiagnostico"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/border_edittext"
+                            android:layout_width="220dp"
+                            android:layout_height="70dp"
+                            android:inputType="textMultiLine"/>
+                    </LinearLayout>
+                    <ListView
+                        android:id="@+id/listDiagnostico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ListView>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/tab2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_margin="6dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:background="@drawable/button_motored"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:id="@+id/btnCausaFalla"
+                            android:text="Agregar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+                        <EditText
+                            android:id="@+id/edtCausaFalla"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/border_edittext"
+                            android:layout_width="220dp"
+                            android:layout_height="70dp"
+                            android:inputType="textMultiLine"/>
+
+                    </LinearLayout>
+                    <ListView
+                        android:id="@+id/listCausaFalla"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ListView>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/tab3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_margin="6dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:background="@drawable/button_motored"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:id="@+id/btnTrabajocorrec"
+                            android:text="Agregar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_weight="1"
+                            android:layout_height="1dp"/>
+                        <EditText
+                            android:id="@+id/edtTrabajocorrec"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/border_edittext"
+                            android:layout_width="220dp"
+                            android:layout_height="70dp"
+                            android:inputType="textMultiLine"/>
+                    </LinearLayout>
+                    <ListView
+
+                        android:id="@+id/listTrabajocorrec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </ListView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+
+</LinearLayout>
+
+

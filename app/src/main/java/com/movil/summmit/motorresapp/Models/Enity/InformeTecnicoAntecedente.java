@@ -21,6 +21,8 @@ public class InformeTecnicoAntecedente {
     @DatabaseField
     private Date AudFechaRegistro;
 
+    private Boolean EsNuevo;
+
     public int getIdInformeTecnicoAntecedente() {
         return IdInformeTecnicoAntecedente;
     }
@@ -59,5 +61,13 @@ public class InformeTecnicoAntecedente {
 
     public void setAudFechaRegistro(Date audFechaRegistro) {
         AudFechaRegistro = audFechaRegistro;
+    }
+
+    public Boolean getEsNuevo() {
+        return EsNuevo;
+    }
+
+    public void setEsNuevo(Boolean esNuevo) {
+        EsNuevo = esNuevo;
     }
 }

@@ -58,7 +58,7 @@ public class InformeTecnicoFallaRepository {
 
     public int delete(InformeTecnicoFalla entidad) {
         try {
-            return entidadDao.delete(entidad);
+            return entidadDao.deleteById(entidad.getIdInformeTecnicoFalla());
         } catch (SQLException e) {
             e.printStackTrace();
         }

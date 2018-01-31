@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APP MOTORED.iml" filepath="$PROJECT_DIR$/APP MOTORED.iml" />
-      <module fileurl="file://D:\MOTORRED\app.summit.motored\APP MOTORED.iml" filepath="D:\MOTORRED\app.summit.motored\APP MOTORED.iml" />
-      <module fileurl="file://C:\Users\cvillanueva\Desktop\APP MOTORED\APP MOVIL MOTORRED.iml" filepath="C:\Users\cvillanueva\Desktop\APP MOTORED\APP MOVIL MOTORRED.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

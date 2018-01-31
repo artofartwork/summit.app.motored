@@ -63,6 +63,7 @@ public class ListaInformesActivity extends AppCompatActivity {
     private ModeloRepository modeloRepository;
     private MaestraArguRepository maestraArguRepository;
     List<InformeTecnico> lstInformes;
+    PreferencesHelper preferencesHelper;
     RecyclerView recyclerView;
     Spinner spnEmpresa, spnSucursal, spnArea, spnMarca, spnModelo;
     Button btnBuscar;
@@ -175,7 +176,7 @@ public class ListaInformesActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(mAdapter);
 
-        swipeController = new SwipeController(new SwipeControllerActions() {
+        swipeController = new SwipeController(2,new SwipeControllerActions() {
             @Override
             public void onRightClicked(int position) {
                // mAdapter.players.remove(position);
@@ -197,7 +198,11 @@ public class ListaInformesActivity extends AppCompatActivity {
 
             @Override
             public void onLeftClicked(int position) {
-                Toast.makeText(ListaInformesActivity.this, "hola mundo" + position, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ListaInformesActivity.this, "hola mundo" + position, Toast.LENGTH_SHORT).show();
+                InformeTecnico objInforme = lstInformes.get(position);
+                Intent inte =new Intent(ListaInformesActivity.this, EditarInformeTecnicoActivity.class);
+                inte.putExtra("IdInformeTecnico", objInforme.getIdInformeTecnico());
+                startActivity(inte);
             }
         });
 
@@ -217,6 +222,7 @@ public class ListaInformesActivity extends AppCompatActivity {
 
         setTitle("Lista de Informes");
         getMenuInflater().inflate(R.menu.menu_lista, menu);
+        getMenuInflater().inflate(R.menu.menu_opciones, menu);
          super.onCreateOptionsMenu(menu);
          return true;
     }
@@ -238,6 +244,16 @@ public class ListaInformesActivity extends AppCompatActivity {
 
                 sincronizarDatos();
 
+
+                break;
+
+            case R.id.action_signout:
+
+
+                preferencesHelper.signOut(this);
+                Intent intent = new Intent(ListaInformesActivity.this, LoginActivity.class);
+                ListaInformesActivity.this.startActivity(intent);
+                finish();
 
                 break;
 

@@ -19,6 +19,7 @@ public class VerInformeTecnicoActivity extends AppCompatActivity {
 
         setTitle("Detalle Informe");
         getMenuInflater().inflate(R.menu.menu_detail_informe, menu);
+
         //super.onCreateOptionsMenu(menu);
         return true;
 

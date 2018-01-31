@@ -84,6 +84,20 @@ public class InformeTecnicoAntecedenteRepository {
         return null;
     }
 
+    public List<InformeTecnicoAntecedente> findAllxInforme(int IdInforme) {
+        try {
+            QueryBuilder qb = entidadDao.queryBuilder();
+            qb.where()
+                    .eq("IdInformeTecnico", IdInforme);
+            return qb.query();
+            //return entidadDao.queryForAll();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 
     public long getNumberOfNotes() {
         QueryBuilder<InformeTecnicoAntecedente, Integer> qb = entidadDao.queryBuilder();
