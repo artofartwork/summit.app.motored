@@ -1,7 +1,16 @@
 package com.movil.summmit.motorresapp.LogicMethods;
 
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.opengl.Visibility;
+import android.support.design.widget.Snackbar;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.CasoTecnico;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Cliente;
@@ -13,6 +22,7 @@ import com.movil.summmit.motorresapp.Models.Enity.Maestro.Marca;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Modelo;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Usuario;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Vin;
+import com.movil.summmit.motorresapp.R;
 import com.movil.summmit.motorresapp.Request.ApiClienteMaestros;
 import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.CasoTecnicoRepository;
 import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.ClienteRepository;
@@ -25,6 +35,9 @@ import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.Mod
 import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.UsuarioRepository;
 import com.movil.summmit.motorresapp.Storage.db.repository.MaestraRepository.VinRepository;
 
+import org.w3c.dom.Text;
+
+import java.text.FieldPosition;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -52,15 +65,52 @@ public class LogicMaestro {
     ModeloRepository modeloRepository;
     UsuarioRepository usuarioRepository;
     VinRepository vinRepository;
+    View progressDialog = null;
+    int cont = 0;
     public LogicMaestro(Context ctx)
     {
         this.ctx = ctx;
     }
 
+    public void getProgressDialog(View pDialog){
+       progressDialog = pDialog;
+    }
+
+
+    public int onMessageExitoSync() {
+
+
+        cont= cont + 1;
+        if(cont == 10){
+
+
+        Snackbar snackbar = Snackbar
+                .make(progressDialog,"¡SINCRONIZACION EXITOSA!", Snackbar.LENGTH_LONG);
+
+        snackbar.show();
+            cont = 0;
+            progressDialog.setVisibility(View.GONE);
+
+        }
+
+        return  1;
+    }
+
+    public int onMessageFalloSync() {
+        Snackbar snackbar = Snackbar
+                .make(progressDialog,"¡SINCRONIZACION FALLIDA!", Snackbar.LENGTH_LONG);
+
+        snackbar.show();
+        return  1;
+    }
+
+
     public int SyncEmpresa()  // 1 es exito, 0 es fallado
     {
-        empresaRepository = new EmpresaRepository(ctx);
 
+       
+
+        empresaRepository = new EmpresaRepository(ctx);
         try {
             Call<List<Empresa>> call= ApiClienteMaestros.getMyApiClient().listaEmpresa();
             call.enqueue(new Callback<List<Empresa>>() {
@@ -69,19 +119,24 @@ public class LogicMaestro {
 
                     if(response!=null && response.isSuccessful()){
                         List<Empresa> listaResponse = response.body();
-
                         //limpio todo
                         empresaRepository.deleteAllRows();
                         for (Empresa obj : listaResponse)
                         {
                             empresaRepository.create(obj);
+
+
+
                         }
+
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Empresa>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -99,6 +154,8 @@ public class LogicMaestro {
 
     public int SyncCasoTecnico()
     {
+        progressDialog.setVisibility(View.VISIBLE);
+
         casoTecnicoRepository = new CasoTecnicoRepository(ctx);
 
         try {
@@ -106,7 +163,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<CasoTecnico>>() {
                 @Override
                 public void onResponse(Call<List<CasoTecnico>> call, Response<List<CasoTecnico>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<CasoTecnico> listaResponse = response.body();
 
@@ -120,12 +176,16 @@ public class LogicMaestro {
 
 
                         }
+
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<CasoTecnico>> call, Throwable t) {
                     Log.d("caso.tec.fechfalla", "-> " + t.getMessage());
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -134,6 +194,7 @@ public class LogicMaestro {
 
         }catch (Exception e)
         {
+            progressDialog.setVisibility(View.GONE);
             Log.d("casotecnico metodo", "-> " + e.getMessage());
             return 0;
         }
@@ -141,6 +202,8 @@ public class LogicMaestro {
 
     public int SyncCliente()
     {
+        progressDialog.setVisibility(View.VISIBLE);
+
         clienteRepository = new ClienteRepository(ctx);
 
         try {
@@ -148,7 +211,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<Cliente>>() {
                 @Override
                 public void onResponse(Call<List<Cliente>> call, Response<List<Cliente>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<Cliente> listaResponse = response.body();
 
@@ -157,13 +219,16 @@ public class LogicMaestro {
                         for (Cliente obj : listaResponse)
                         {
                             clienteRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Cliente>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -178,6 +243,8 @@ public class LogicMaestro {
 
     public int SyncEmpleado()
     {
+        progressDialog.setVisibility(View.VISIBLE);
+
         empleadoRepository = new EmpleadoRepository(ctx);
 
         try {
@@ -185,7 +252,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<Empleado>>() {
                 @Override
                 public void onResponse(Call<List<Empleado>> call, Response<List<Empleado>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<Empleado> listaResponse = response.body();
 
@@ -197,12 +263,14 @@ public class LogicMaestro {
 
 
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Empleado>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -217,6 +285,8 @@ public class LogicMaestro {
 
     public int SyncMaestra()
     {
+        progressDialog.setVisibility(View.VISIBLE);
+
         maestraRepository = new MaestraRepository(ctx);
 
         try {
@@ -233,13 +303,17 @@ public class LogicMaestro {
                         for (Maestra obj : listaResponse)
                         {
                             maestraRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Maestra>> call, Throwable t) {
                     Log.d("maestra", "-> " + t.getMessage());
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -253,6 +327,8 @@ public class LogicMaestro {
     }
     public int SyncMaestraArgu()
     {
+        progressDialog.setVisibility(View.VISIBLE);
+
         maestraArguRepository = new MaestraArguRepository(ctx);
 
         try {
@@ -263,19 +339,21 @@ public class LogicMaestro {
 
                     if(response!=null && response.isSuccessful()){
                         List<MaestraArgu> listaResponse = response.body();
-
                         //limpio todo
                         maestraArguRepository.deleteAllRows();
                         for (MaestraArgu obj : listaResponse)
                         {
                             maestraArguRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<MaestraArgu>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -290,6 +368,9 @@ public class LogicMaestro {
 
     public int SyncMarca()
     {
+
+        progressDialog.setVisibility(View.VISIBLE);
+
         marcaRepository = new MarcaRepository(ctx);
 
         try {
@@ -297,7 +378,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<Marca>>() {
                 @Override
                 public void onResponse(Call<List<Marca>> call, Response<List<Marca>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<Marca> listaResponse = response.body();
 
@@ -306,13 +386,16 @@ public class LogicMaestro {
                         for (Marca obj : listaResponse)
                         {
                             marcaRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Marca>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -324,9 +407,10 @@ public class LogicMaestro {
             return 0;
         }
     }
-
     public int SyncModelo()
     {
+        
+
         modeloRepository = new ModeloRepository(ctx);
 
         try {
@@ -334,7 +418,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<Modelo>>() {
                 @Override
                 public void onResponse(Call<List<Modelo>> call, Response<List<Modelo>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<Modelo> listaResponse = response.body();
 
@@ -343,13 +426,16 @@ public class LogicMaestro {
                         for (Modelo obj : listaResponse)
                         {
                             modeloRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Modelo>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -364,6 +450,9 @@ public class LogicMaestro {
 
     public int SyncUsuario()
     {
+
+        
+
         usuarioRepository = new UsuarioRepository(ctx);
 
         try {
@@ -371,7 +460,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<Usuario>>() {
                 @Override
                 public void onResponse(Call<List<Usuario>> call, Response<List<Usuario>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<Usuario> listaResponse = response.body();
 
@@ -380,13 +468,16 @@ public class LogicMaestro {
                         for (Usuario obj : listaResponse)
                         {
                             usuarioRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Usuario>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 
@@ -400,6 +491,8 @@ public class LogicMaestro {
     }
     public int SyncVin()
     {
+        progressDialog.setVisibility(View.VISIBLE);
+
         vinRepository = new VinRepository(ctx);
 
         try {
@@ -407,7 +500,6 @@ public class LogicMaestro {
             call.enqueue(new Callback<List<Vin>>() {
                 @Override
                 public void onResponse(Call<List<Vin>> call, Response<List<Vin>> response) {
-
                     if(response!=null && response.isSuccessful()){
                         List<Vin> listaResponse = response.body();
 
@@ -416,13 +508,18 @@ public class LogicMaestro {
                         for (Vin obj : listaResponse)
                         {
                             vinRepository.create(obj);
+
                         }
+                        onMessageExitoSync();
+
+
                     }
                 }
 
                 @Override
                 public void onFailure(Call<List<Vin>> call, Throwable t) {
-
+                    progressDialog.setVisibility(View.GONE);
+                    onMessageFalloSync();
                 }
             });
 

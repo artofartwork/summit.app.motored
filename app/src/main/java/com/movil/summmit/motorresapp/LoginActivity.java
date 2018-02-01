@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.movil.summmit.motorresapp.LogicMethods.LogicMaestro;
 import com.movil.summmit.motorresapp.Models.Enity.Maestro.Empresa;
@@ -179,10 +181,13 @@ public class LoginActivity extends AppCompatActivity {
 
     public void sincronizarDatos(){
 
+
+
         showLoading();
 
-        LogicMaestro logicMaestro = new LogicMaestro(this);
 
+        LogicMaestro logicMaestro = new LogicMaestro(this);
+        logicMaestro.getProgressDialog(flayLoading);
         logicMaestro.SyncEmpresa();
         logicMaestro.SyncCasoTecnico();
         logicMaestro.SyncCliente();
@@ -195,9 +200,8 @@ public class LoginActivity extends AppCompatActivity {
         logicMaestro.SyncUsuario();
 
 
-        hideLoading();
-
-        onMessageExitoSync();
+      //  hideLoading();
+      // onMessageExitoSync();
 
     }
     public int onMessageExitoSync() {

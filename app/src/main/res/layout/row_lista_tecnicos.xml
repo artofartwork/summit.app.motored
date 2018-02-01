@@ -6,6 +6,8 @@
 
 
     <TextView
+        android:background="@drawable/button_motored"
+        android:textColor="#ffffff"
         style="@style/text_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
